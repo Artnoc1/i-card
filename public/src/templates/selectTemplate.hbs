@@ -1,0 +1,11 @@
+<div class="images-container" style="margin: 5px;">
+  {{#templates}}
+  <div class="image-container" data-id="{{id}}">
+    <div class="images" style="pointer-events: none;">
+      {{#images}}
+      <img src="{{src}}" alt="{{name}}">
+      {{/images}}
+    </div>
+  </div>
+  {{/templates}}
+</div>

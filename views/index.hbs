@@ -6,58 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/style/toast.css">
+    <link rel="stylesheet" href="/style/dialogs.css">
+    <script src="/js/main.js"></script>
     <title>iCard Manager</title>
 </head>
 
 <body>
-    <h1>iCard</h1>
-    <nav>
-        <a href="/generate.html">Generate Icards</a>
-    </nav>
-    <br>
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Branch</th>
-                <th>D.O.B</th>
-                <th>Blood G.</th>
-                <th>Batch</th>
-                <th>Generate ID</th>
-            </tr>
-        </thead>
-        <tbody>
-            {{#data}}
-            {{#.}}
-            <tr>
-                <td>{{id}}</td>
-                <td>{{name}}</td>
-                <td>{{branch}}</td>
-                <td>{{DOB}}</td>
-                <td>{{bg}}</td>
-                <td>{{batch}}</td>
-                <td><button onclick="generate('{{id}}')" data-value="{{id}}">generate</button></td>
-            </tr>
-            {{/.}}
-            {{/data}}
-        </tbody>
-    </table>
-
-    <form id="form" action="add">
-        <input type="text" name="id" id="id" placeholder="id">
-        <input type="text" name="name" id="name" placeholder="name">
-        <input type="text" name="branch" id="branch" placeholder="branch">
-        <input type="text" name="dob" id="dob" placeholder="dob">
-        <input type="text" name="batch" id="batch" placeholder="batch">
-        <button>add</button>
-    </form>
-
-    <script>
-        function generate(id) {
-            location.href = `/generate.html?id=${id}`;
-        }
-    </script>
+    <noscript>Please enable JavaScript to use this site</noscript>
 </body>
 
 </html>

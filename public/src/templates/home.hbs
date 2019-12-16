@@ -1,0 +1,29 @@
+<header>
+  <h1>
+    <span>i-card</span>
+    <small>Chouksey Group of Colleges</small>
+  </h1>
+  <nav>
+    <a href="/addTemplate">Add new template</a>
+    <a href="/manageTemplates">Manage templates</a>
+    <span id="selectTemplate" class="link">Select template</span>
+  </nav>
+  <nav>
+    <a href="/logout">Logout</a>
+  </nav>
+</header>
+
+<div role="form" id="form">
+  <h2>Search</h2>
+  <hr style="opacity: 0.5;">
+  <select name="type" id="type">
+    <option value="staff">staff</option>
+    <option value="student" selected>student</option>
+  </select>
+  <input type="text" name="name" id="name" placeholder="name">
+  <input type="text" name="branch" id="branch" placeholder="branch">
+  <input type="text" name="batch" id="batch" placeholder="batch">
+  <button action="submit">search</button>
+</div>
+<hr>
+<div id="images-container"></div>
